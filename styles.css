@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Hero'; /* Name your font family */
+    src: url('./fonts/hero-2')
+  }
+
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0;
+    font-family: 'Hero',sans-serif;
+}
+
+.header , .information, .quote, .modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex:1;
+    padding: 0px 200px ;
+    min-height: 60vh;
+ 
+    
+}
+.header{
+    justify-content: center;
+    background-color: #1F2937;
+    color: #f9faf8;
+    gap: 40px
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+#logo{
+    flex-shrink: 0;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #f9faf8;
+}
+nav p{
+    font-weight: 700;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 1;
+    gap: 48px;
+    margin:auto 0 ;
+    padding-bottom: 60px;
+    
+}
+
+.text-header{
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    
+}
+
+.content h1{
+    max-width: 60%;
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0;
+    
+}
+
+.content h3{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.text-header button{
+    align-self: flex-start;
+    background-color: #3882F6;
+    color: #f9faf8;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 16px;
+
+}
+
+.img-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    min-height: 250px;
+    flex: 0 1 1000px;
+    background-color: gray;
+    align-self: stretch;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+.information{
+    align-items: center;
+    gap: 40px;
+    padding: 20px 48px;
+}
+.information h1{
+    margin: 0 auto;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:30px;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex: 0 1 ;
+    
+}
+
+.block{
+    align-self: center;
+    border:5px solid #3882F6 ;
+    border-radius: 10px;
+    min-width: 150px;
+    min-height: 150px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+.quote{
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color:#1f2937;
+}
+
+#roman-guy{
+    align-self: flex-end;
+    font-size: 20px;
+}
