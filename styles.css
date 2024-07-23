@@ -107,6 +107,17 @@ button{
     flex: 1;
     background-color: gray;
     align-self: stretch;
+    box-shadow:10px 10px 10px #53658a;
+    border-radius: 10px;
+    
+
+}
+
+img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 40% 45%;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------ */
@@ -140,14 +151,15 @@ button{
     text-align: center;
     flex: 0 1 ;
     
+    
 }
 
 .block{
     align-self: center;
-    border:5px solid #3882F6 ;
     border-radius: 10px;
     min-width: 150px;
     min-height: 150px;
+    box-shadow:-5px 5px 10px  #3881f6a8,5px 5px 10px  #3881f6a8
 }
 
 
@@ -189,6 +201,7 @@ button{
     align-items: center;
     gap: 15px;
     flex-wrap: wrap;
+    box-shadow: 8px 8px 10px 5px #979797;
 }
 
 .modal button{
