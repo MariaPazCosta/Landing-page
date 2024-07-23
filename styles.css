@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Hero'; /* Name your font family */
-    src: url('./fonts/hero-2')
+    src: url('./fonts/hero-2/HeroLight-Regular.otf')
   }
 
 body{
@@ -11,21 +11,23 @@ body{
     font-family: 'Hero',sans-serif;
 }
 
-.header , .information, .quote, .modal{
+.header , .information, .quote, .modal-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     flex:1;
-    padding: 0px 200px ;
-    min-height: 60vh;
+    padding: 50px 150px ;
+    min-height: 50vh;
  
-    
+
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
 }
 .header{
     justify-content: center;
     background-color: #1F2937;
     color: #f9faf8;
-    gap: 40px
+    gap: 50px
 }
 
 nav{
@@ -42,7 +44,7 @@ nav{
 ul{
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 16px;
 }
 
 a{
@@ -58,16 +60,9 @@ nav p{
     justify-content: space-between;
     align-items: center;
     flex-shrink: 1;
-    gap: 48px;
+    gap: 30px;
     margin:auto 0 ;
     padding-bottom: 60px;
-    
-}
-
-.text-header{
-    display: flex;
-    flex-direction: column;
-    min-width: 50%;
     
 }
 
@@ -85,7 +80,15 @@ nav p{
     margin: 0;
 }
 
-.text-header button{
+.text-header{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    
+}
+
+button{
     align-self: flex-start;
     background-color: #3882F6;
     color: #f9faf8;
@@ -101,8 +104,7 @@ nav p{
     justify-content: center;
     align-items: center;
     margin: 0px;
-    min-height: 250px;
-    flex: 0 1 1000px;
+    flex: 1;
     background-color: gray;
     align-self: stretch;
 }
@@ -110,14 +112,16 @@ nav p{
 /* ------------------------------------------------------------------------------------------------------------------------ */
 
 .information{
+    justify-content: center;
     align-items: center;
-    gap: 40px;
-    padding: 20px 48px;
+    gap: 20px;
+    
 }
 .information h1{
     margin: 0 auto;
     font-size: 36px;
     font-weight: 700;
+    flex-shrink: 0;
 }
 
 .cards{
@@ -156,9 +160,60 @@ nav p{
     align-items: center;
     font-size: 36px;
     color:#1f2937;
+    
+}
+.quote p{
+    margin: 0;
 }
 
 #roman-guy{
+    margin-top: 10px;
     align-self: flex-end;
     font-size: 20px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+.modal-container{
+    justify-content: center;
+    align-items: stretch;
+}
+
+.modal{
+    background-color: #3882F6;
+    border-radius: 10px;
+    padding: 50px 90px;
+    color:#f9faf8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.modal button{
+    border: 3px solid #f9faf8;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.modal *{
+    margin: 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    color: #f9faf8;
+    padding: 20px 150px;
+    gap: 10px;
+}
+
+.footer p{
+    margin: 0;
 }
