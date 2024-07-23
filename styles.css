@@ -92,6 +92,7 @@ button{
     align-self: flex-start;
     background-color: #3882F6;
     color: #f9faf8;
+    font-weight: 800;
     padding: 10px 40px;
     border: none;
     border-radius: 10px;
@@ -105,20 +106,20 @@ button{
     align-items: center;
     margin: 0px;
     flex: 1;
-    background-color: gray;
     align-self: stretch;
+    flex-basis: 15%;
+    
     box-shadow:10px 10px 10px #53658a;
     border-radius: 10px;
+    
+    background-color: gray;
+    background-image: url(./imgs/girl-8435340_1280.png);
+    background-size: cover;
+    background-position: 30% ;
     
 
 }
 
-img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: 40% 45%;
-}
 
 /* ------------------------------------------------------------------------------------------------------------------------ */
 
@@ -207,7 +208,7 @@ img{
 .modal button{
     border: 3px solid #f9faf8;
     font-size: 16px;
-    font-weight: 800;
+    
 }
 
 .modal *{
